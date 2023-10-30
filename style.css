@@ -28,7 +28,7 @@ html {
 
 body {
   margin: 0;
-  padding: 3rem 1rem;
+  padding: 0rem 0rem;
   min-height: 100vh;
   background-color: var(--color-gray-light-3);
 
@@ -36,7 +36,7 @@ body {
 
 .wrapper {
   margin:  auto;
-  max-width: 70rem;
+  max-width: 100%;
   background-color: var(--color-gray-light-2);
   display: flex;
   box-shadow: 0px 0px 15px 4px #b3b3b3;
@@ -44,7 +44,8 @@ body {
 }
 
 .intro {
-  flex: 0 0 300px;
+  /* flex: 0 0 300px; */
+  width: 25rem;
   background-color: var(--color-gray-light-1);
   box-shadow: 5px 0px 15px 0px #b3b3b3;
   z-index: 5;
@@ -52,7 +53,7 @@ body {
 .profile {
   position: relative;
   background-color: var(--profile-theme);
-  padding: 2rem 1rem;
+  padding: 4rem 2rem;
   margin-bottom: 50px;
   text-align: center;
   user-select: none;
@@ -68,18 +69,18 @@ body {
   transform: skewY(-5deg);
 }
 .photo img {
-  width: 80%;
-  border-radius: 50%;
+  width: 50%;
+  border-radius: 10%;
 }
 .bio .name {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: center;
   color: var(--color-gray-light-1);
   margin: 0;
   margin-top: 1rem;
 }
 .bio .profession {
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-align: center;
   color: var(--color-gray-light-1);
   margin: 0;
@@ -90,16 +91,24 @@ body {
   color: var(--color-gray-dark-1);
 }
 .intro-section .title {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
+
+
+}.title{
+  margin-bottom: 2rem;
+  margin-top: 5rem;
 }
 .about .paragraph {
+  font-size: 1.5rem;
   text-align: justify;
+  line-height: 2rem;
 }
 .info-section {
-  margin: 1rem 0;
+  margin: 2rem 1rem;
+  font-size: 1.4rem;
 }
 .info-section span {
   position: relative;
@@ -136,30 +145,43 @@ body {
 .link span:hover::after {
   width: 100%;
 }
-
+.iii{
+  margin-top: 2rem;
+}
 /* Detail section overall setting*/
 .detail {
-  flex: 1 0 0;
+  /* flex: 1 0 0; */
+
   background-color: white;
   padding: 2rem;
+
+
 }
 .detail:hover > .detail-section:not(:hover) {
   opacity: 0.3;
 }
 .detail-section {
   transition: all 0.3s;
+
 }
+.interests{
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
 .detail-section:not(:last-of-type) {
   padding-bottom: 1rem;
 }
 .detail-title {
-  display: flex;
+  display: block;
   align-items: center;
 }
 .detail-section > .detail-content {
+
   padding: 1.5rem;
   padding-left: 2rem;
   user-select: none;
+
 }
 .detail-section.edu > .detail-content {
   padding-left: calc(1.5rem + 10px);
@@ -167,6 +189,9 @@ body {
 .title-icon + span {
   font-size: 2em;
   transition: all 0.3s;
+}
+.twotwo{
+  display: block;
 }
 .title-icon {
   display: inline-flex;
@@ -198,27 +223,34 @@ body {
 .timeline-block {
   position: relative;
   padding-left: 30px;
+
+}
+.oneone{
+  display: flex;
+}
+.oneoneone{
+  display: flex;
 }
 .timeline-block:not(:last-of-type) {
   margin-bottom: 1rem;
 }
 .timeline-block h1,
 h2 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin: 5px 0;
   transition: all 0.3s;
 }
 .timeline-block h2 {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   margin: 5px 0;
   transition: all 0.3s;
 }
 .timeline-block p {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   margin: 5px 0;
 }
 .timeline-block time {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   color: var(--color-gray-dark-2);
 }
 .timeline-block::before {
@@ -252,11 +284,18 @@ h2 {
 .pg-list {
   display: flex;
   flex-wrap: wrap;
+
+}
+.detail-content{
+  margin-top: 2rem;
+}
+.hs{
+  margin-top: 5rem;
 }
 .pg-list span {
-  font-size: 1em;
+  font-size: 1.2em;
   color: #fff;
-  display: block;
+  display:  inline-block;
   margin: 0.5em 0.5em;
   background-color: var(--profile-theme);
   padding: 0.5em 1.5em;
@@ -317,7 +356,7 @@ h2 {
   html {
     font-size: 90%;
   }
-  .wrapper {
+  /* .wrapper {
     flex-direction: column;
   }
   .intro,
@@ -333,23 +372,23 @@ h2 {
   }
   .profile::after {
     display: none;
-  }
+  } */
   .photo img {
     width: 100px;
     height: 100px;
   }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   html {
     font-size: 80%;
   }
   .favor-list > li {
     flex: 0 0 33.3333%;
   }
-}
-@media (max-width: 500px) {
+} */
+/* @media (max-width: 500px) {
   html {
     font-size: 70%;
-  }
+  } */
 }
